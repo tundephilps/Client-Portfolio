@@ -2,14 +2,16 @@ import Image from "next/image";
 import React from "react";
 import him from "@/public/him3.jpg";
 
+import styles from "./about.module.css";
+
 const About = () => {
   return (
-    <section className="relative">
+    <section>
       {/* Background Image */}
       <img
-        src="https://assets.website-files.com/646f65e37fe0275cfb808405/646f68133fc5cb4e29ed28f9_How%20It%20Works%20BG.svg"
+        src="https://c3.staticflickr.com/1/293/18910888954_5b8dc7ebf7_k.jpg"
         alt=""
-        className="absolute inset-[0%] z-[1] inline-block h-full w-full object-cover"
+        className="absolute inset-[0%] z-[1] inline-block lg:h-[280vh] h-[220vh] w-full object-cover"
       />
       {/* Container */}
 
@@ -35,7 +37,7 @@ const About = () => {
             <Image
               src={him}
               alt=""
-              className="mx-auto inline-block h-full w-full max-w-[640px] rounded-2xl object-cover"
+              className="mx-auto inline-block h-full w-full max-w-[640px] rounded-2xl object-cover "
             />
           </div>
         </div>

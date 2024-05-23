@@ -1,0 +1,13 @@
+.bg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 150vh;
+  margin: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: url("https://c3.staticflickr.com/1/293/18910888954_5b8dc7ebf7_k.jpg")
+    center center no-repeat;
+  background-size: cover;
+}

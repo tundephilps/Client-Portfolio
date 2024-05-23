@@ -5,8 +5,8 @@ import Hero from "@/components/Hero";
 
 import About from "@/components/About";
 import Projects from "@/components/Projects";
-// import Pic1 from '../../public/images/1.jpg'
-// import Pic2 from '../../public/images/2.jpeg'
+
+import Footer from "@/components/Footer";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Lenis from "lenis";
@@ -36,6 +36,7 @@ export default function Home() {
       <Section2 scrollYProgress={scrollYProgress} />
 
       <Section3 scrollYProgress={scrollYProgress} />
+      <Footer />
     </main>
   );
 }
@@ -69,8 +70,14 @@ const Section3 = ({ scrollYProgress }) => {
   const rotate = useTransform(scrollYProgress, [0, 1], [5, 0]);
 
   return (
-    <motion.div style={{ scale, rotate }} className=" pt-12 ">
+    <motion.div
+      style={{ scale, rotate }}
+      //  className="pt-[120px] md:pt-[120px] lg:pt-0"
+    >
+      <div className="h-[180px] md:h-[180px]" />
       <Projects />
+
+      <div className="h-22" />
     </motion.div>
   );
 };

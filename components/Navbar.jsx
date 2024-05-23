@@ -4,7 +4,7 @@ import { FaRegCopyright } from "react-icons/fa";
 
 function Navbar(props) {
   return (
-    <header className="text-gray-600 body-font">
+    <header className="text-gray-600 body-font ">
       <div className="container mx-auto flex flex-wrap justify-between p-5 flex-row sm:flex-row items-center">
         <a
           href
@@ -13,7 +13,7 @@ function Navbar(props) {
           <FaRegCopyright className="" />
           <span className="ml-3 text-xl">Lekan Onaolapo</span>
         </a>
-        <nav className="md:ml-auto mb-2 flex flex-wrap items-center text-base justify-center cursor-pointer">
+        <nav className="md:ml-auto hidden mb-2 lg:flex flex-wrap items-center text-base justify-center cursor-pointer">
           <a
             href
             className="mr-5 hover:text-gray-900 transform hover:-translate-y-1 hover:scale-110 transition duration-500 ease-in-out"
